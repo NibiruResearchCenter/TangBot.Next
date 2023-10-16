@@ -11,9 +11,87 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangBot.Next.Persistence.Common", "src\Persistence\TangBot.Next.Persistence.Common\TangBot.Next.Persistence.Common.csproj", "{DE344754-CE99-4EC7-948B-9D2ED70432CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{B1659F4A-5E8A-413F-B9D1-E608A77CE004}"
+	ProjectSection(SolutionItems) = preProject
+		src\Persistence\Directory.Build.props = src\Persistence\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{69E49981-46A9-43F9-8D6A-6DA9743BF7F9}"
+	ProjectSection(SolutionItems) = preProject
+		src\Domain\Directory.Build.props = src\Domain\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangBot.Next.Domain", "src\Domain\TangBot.Next.Domain\TangBot.Next.Domain.csproj", "{1E4C80C7-3B00-49A7-878B-B67475DF1648}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{1E9EDC64-CDB5-49A4-8E95-31A99019B420}"
+	ProjectSection(SolutionItems) = preProject
+		src\Application\Directory.Build.props = src\Application\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangBot.Next.Application.Common", "src\Application\TangBot.Next.Application.Common\TangBot.Next.Application.Common.csproj", "{01FBF87D-E4C4-48D3-85DF-AB1C52B17609}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A6834774-2ABC-464D-B206-2B23DA6BC740}"
+	ProjectSection(SolutionItems) = preProject
+		src\Presentation\Directory.Build.props = src\Presentation\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangBot.Next.Presentation.Dodo", "src\Presentation\TangBot.Next.Presentation.Dodo\TangBot.Next.Presentation.Dodo.csproj", "{45D941AA-9542-4916-80A9-2588BAB9661B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangBot.Next.Presentation.Common", "src\Presentation\TangBot.Next.Presentation.Common\TangBot.Next.Presentation.Common.csproj", "{FAA9DE1E-2B57-4471-9379-E722D7366159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangBot.Next.Application.Dodo", "src\Application\TangBot.Next.Application.Dodo\TangBot.Next.Application.Dodo.csproj", "{3D91B740-4569-4C16-84A1-B30A1465EDAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{23CA8745-6C4D-4DB0-BF3E-79BD38CCAC5D}"
+	ProjectSection(SolutionItems) = preProject
+		src\Library\Directory.Build.props = src\Library\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangBot.Next.Library.Dodo.Card", "src\Library\TangBot.Next.Library.Dodo.Card\TangBot.Next.Library.Dodo.Card.csproj", "{FA684F8B-2AFB-41C0-B507-FCFE73E5D296}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE344754-CE99-4EC7-948B-9D2ED70432CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE344754-CE99-4EC7-948B-9D2ED70432CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE344754-CE99-4EC7-948B-9D2ED70432CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE344754-CE99-4EC7-948B-9D2ED70432CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4C80C7-3B00-49A7-878B-B67475DF1648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4C80C7-3B00-49A7-878B-B67475DF1648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4C80C7-3B00-49A7-878B-B67475DF1648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4C80C7-3B00-49A7-878B-B67475DF1648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FBF87D-E4C4-48D3-85DF-AB1C52B17609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FBF87D-E4C4-48D3-85DF-AB1C52B17609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FBF87D-E4C4-48D3-85DF-AB1C52B17609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FBF87D-E4C4-48D3-85DF-AB1C52B17609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D941AA-9542-4916-80A9-2588BAB9661B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D941AA-9542-4916-80A9-2588BAB9661B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D941AA-9542-4916-80A9-2588BAB9661B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D941AA-9542-4916-80A9-2588BAB9661B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA9DE1E-2B57-4471-9379-E722D7366159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA9DE1E-2B57-4471-9379-E722D7366159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA9DE1E-2B57-4471-9379-E722D7366159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA9DE1E-2B57-4471-9379-E722D7366159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D91B740-4569-4C16-84A1-B30A1465EDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D91B740-4569-4C16-84A1-B30A1465EDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D91B740-4569-4C16-84A1-B30A1465EDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D91B740-4569-4C16-84A1-B30A1465EDAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA684F8B-2AFB-41C0-B507-FCFE73E5D296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA684F8B-2AFB-41C0-B507-FCFE73E5D296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA684F8B-2AFB-41C0-B507-FCFE73E5D296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA684F8B-2AFB-41C0-B507-FCFE73E5D296}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE344754-CE99-4EC7-948B-9D2ED70432CC} = {B1659F4A-5E8A-413F-B9D1-E608A77CE004}
+		{1E4C80C7-3B00-49A7-878B-B67475DF1648} = {69E49981-46A9-43F9-8D6A-6DA9743BF7F9}
+		{01FBF87D-E4C4-48D3-85DF-AB1C52B17609} = {1E9EDC64-CDB5-49A4-8E95-31A99019B420}
+		{45D941AA-9542-4916-80A9-2588BAB9661B} = {A6834774-2ABC-464D-B206-2B23DA6BC740}
+		{FAA9DE1E-2B57-4471-9379-E722D7366159} = {A6834774-2ABC-464D-B206-2B23DA6BC740}
+		{3D91B740-4569-4C16-84A1-B30A1465EDAA} = {1E9EDC64-CDB5-49A4-8E95-31A99019B420}
+		{FA684F8B-2AFB-41C0-B507-FCFE73E5D296} = {23CA8745-6C4D-4DB0-BF3E-79BD38CCAC5D}
 	EndGlobalSection
 EndGlobal

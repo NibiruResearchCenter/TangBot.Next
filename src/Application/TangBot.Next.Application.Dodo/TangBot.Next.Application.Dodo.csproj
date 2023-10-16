@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="DoDo.Open.Sdk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\TangBot.Next.Library.Dodo.Card\TangBot.Next.Library.Dodo.Card.csproj" />
+    <ProjectReference Include="..\TangBot.Next.Application.Common\TangBot.Next.Application.Common.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+      <PackageReference Include="EFCore.NamingConventions" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Application\TangBot.Next.Application.Common\TangBot.Next.Application.Common.csproj" />
+      <ProjectReference Include="..\..\Domain\TangBot.Next.Domain\TangBot.Next.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

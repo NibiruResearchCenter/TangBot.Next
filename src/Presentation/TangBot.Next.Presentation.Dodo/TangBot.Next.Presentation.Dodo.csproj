@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+    
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\TangBot.Next.Application.Dodo\TangBot.Next.Application.Dodo.csproj" />
+    <ProjectReference Include="..\TangBot.Next.Presentation.Common\TangBot.Next.Presentation.Common.csproj" />
+  </ItemGroup>
+
+</Project>
