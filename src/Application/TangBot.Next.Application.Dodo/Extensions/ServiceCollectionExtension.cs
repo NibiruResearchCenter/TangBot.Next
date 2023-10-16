@@ -1,4 +1,4 @@
-// ServiceCollectionExtension.cs - TangBot.Next - Next version of TangBot for Nibiru
+// DodoServiceExtension.cs - TangBot.Next - Next version of TangBot for Nibiru
 // Copyright (C) 2023 Nibiru Research Center and all contributors
 //
 // This program is free software: you can redistribute it and/or modify
@@ -15,10 +15,10 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>
 
 using Microsoft.Extensions.DependencyInjection;
-using TangBot.Next.Application.Common.Interfaces;
-using TangBot.Next.Persistence.Common;
+using TangBot.Next.Application.Dodo.Abstract;
+using TangBot.Next.Application.Dodo.Handler;
 
-namespace TangBot.Next.Presentation.Common.Extensions;
+namespace TangBot.Next.Application.Dodo.Extensions;
 
 /// <summary>
 ///     Extension methods for <see cref="IServiceCollection" /> to register services
@@ -26,10 +26,11 @@ namespace TangBot.Next.Presentation.Common.Extensions;
 public static class ServiceCollectionExtension
 {
     /// <summary>
-    ///     Add TangBot DbContext
+    ///     Add Dodo Open API Service
     /// </summary>
-    public static void AddTangBotDbContext(this IServiceCollection services)
+    /// <param name="services"></param>
+    public static void AddEventHandlers(this IServiceCollection services)
     {
-        services.AddDbContext<ITangBotDbContext, TangBotDbContext>();
+        services.AddScoped<DodoEventHandlerBase, CommandMessageHandler>();
     }
 }

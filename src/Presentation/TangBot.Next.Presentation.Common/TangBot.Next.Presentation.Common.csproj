@@ -9,4 +9,9 @@
       <PackageReference Include="Serilog.Sinks.Console" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\Application\TangBot.Next.Application.Common\TangBot.Next.Application.Common.csproj" />
+      <ProjectReference Include="..\..\Persistence\TangBot.Next.Persistence.Common\TangBot.Next.Persistence.Common.csproj" />
+    </ItemGroup>
+
 </Project>
